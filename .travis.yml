@@ -22,7 +22,7 @@ jobs:
 ######################## 8-jessie #######################
     - stage: npm-targets
       name: "Test 8-jessie"
-      install: Skip
+      install: skip
       script:
       - docker run --rm $DOCKER_USERNAME/probot-hello:$NODE_VERSION-$(git rev-parse HEAD) npm run $NPM_TARGET
       env:
@@ -30,7 +30,7 @@ jobs:
       - NPM_TARGET=test
     - stage: npm-targets
       name: "Test 8-jessie"
-      install: Skip
+      install: skip
       script:
       - docker run --rm $DOCKER_USERNAME/probot-hello:$NODE_VERSION-$(git rev-parse HEAD) npm run $NPM_TARGET
       env:
@@ -38,7 +38,7 @@ jobs:
       - NPM_TARGET=lint
     - stage: npm-targets
       name: "Test 8-jessie"
-      install: Skip
+      install: skip
       script:
       - docker run --rm $DOCKER_USERNAME/probot-hello:$NODE_VERSION-$(git rev-parse HEAD) npm run $NPM_TARGET
       env:
@@ -48,7 +48,7 @@ jobs:
 ######################## 10-jessie #######################
     - stage: npm-targets
       name: "Test 10-jessie"
-      install: Skip
+      install: skip
       script:
       - docker run --rm $DOCKER_USERNAME/probot-hello:$NODE_VERSION-$(git rev-parse HEAD) npm run $NPM_TARGET
       env:
@@ -56,7 +56,7 @@ jobs:
       - NPM_TARGET=test
     - stage: npm-targets
       name: "Test 10-jessie"
-      install: Skip
+      install: skip
       script:
       - docker run --rm $DOCKER_USERNAME/probot-hello:$NODE_VERSION-$(git rev-parse HEAD) npm run $NPM_TARGET
       env:
@@ -64,7 +64,7 @@ jobs:
       - NPM_TARGET=lint
     - stage: npm-targets
       name: "Test 10-jessie"
-      install: Skip
+      install: skip
       script:
       - docker run --rm $DOCKER_USERNAME/probot-hello:$NODE_VERSION-$(git rev-parse HEAD) npm run $NPM_TARGET
 
