@@ -43,6 +43,6 @@
     ]
   }, 
   "jest": {
-    "testEvironment" : "node"
+    "testEnvironment" : "node"
   }
 }
