@@ -2,6 +2,7 @@ const { Application } = require('probot')
 // Requiring our app implementation
 const myProbotApp = require('..')
 
+// const checkRunCompletedPayload = require('./fixtures/check_run.completed.json')
 const issuesOpenedPayload = require('./fixtures/issues.opened.json')
 
 test('that we can run tests', () => {
@@ -36,6 +37,14 @@ describe('My Probot app', () => {
     // This test passes if the code in your index.js file calls `context.github.issues.createComment`
     expect(github.issues.createComment).toHaveBeenCalled()
   })
+  // Test for the checks_run completed event
+  // test('process check_run completed event', async () => {
+  //   // Simulates delivery of an issues.opened webhook
+  //   await app.receive({
+  //     name: 'check_run.completed',
+  //     payload: checkRunCompletedPayload
+  //   })
+  // })
 })
 
 // For more information about testing with Jest see:
